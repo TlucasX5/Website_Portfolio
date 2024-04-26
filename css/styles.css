@@ -1,3 +1,19 @@
+/*
+Student Name: Suzanne Lucas
+File Name: styles.css
+Date: 4/25/2024
+*/
+
+
+/* CSS Reset */
+body, header, nav, main, footer, h1, div, img {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+
+/* Style rules for for body and images */
 body {
     /*background-color: #d6c9f2;*/
     background-color: #b99ad9;
@@ -8,12 +24,29 @@ img {
     display: block;
 }
 
+
+/* Style rules for mobile viewport */
+
+
+
+/* Style rules for header */
 header {
+    /*position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    background-color: #b99ad9;
+    height: 190px;*/
     width: 25%;
     float: left;
     /*color: #34282C;*/
 }
 
+header img {
+    margin: 0 auto;
+}
+
+
+/* Style rules for navigation area */
 nav {
     width: 70%;
     float: right;
@@ -29,6 +62,8 @@ nav ul {
 nav li {
     display: inline-block;      /*removes underline from link*/
     font-size: 2em;
+    font-family: lato, verdana, Ariel;
+    font-weight: bold;
 }
 
 nav li a {
@@ -39,6 +74,8 @@ nav li a {
     text-decoration: none;
 }
 
+
+/* Style rules for main content */
 main {
     clear: left;
     /*background-color: #d6c9f2;*/
@@ -46,8 +83,14 @@ main {
     padding: 2%;
     font-size: 1.25em;
     color: #34282C;
+    overflow: auto;
 }
 
+.action {
+    font-size: 1.35em;
+    color:#8a2be2;
+    font-weight: bold;
+}
 
 #about, #goals, #education {
     width: 29%;
@@ -55,7 +98,21 @@ main {
     margin: 0 2%;
 }
 
+#contact {
+    text-align: center;
+}
 
+#contact a {
+    color: #8a2be2;
+    text-decoration: none;
+}
+
+.map {
+    border: 8px solid #b99ad9;
+}
+
+
+/* Style rules for footer content */
 footer p {
     clear: left;
     text-align: center;
