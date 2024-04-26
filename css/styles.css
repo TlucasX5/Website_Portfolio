@@ -11,7 +11,7 @@ img {
 header {
     width: 25%;
     float: left;
-    color: #34282C;
+    /*color: #34282C;*/
 }
 
 nav {
@@ -21,19 +21,19 @@ nav {
 }
 
 nav ul {
-    list-style-type: none;
+    list-style-type: none;      /*removes bullet*/
     margin: 0;
     text-align: right;
 }
 
 nav li {
-    display:inline-block;
+    display: inline-block;      /*removes underline from link*/
     font-size: 2em;
 }
 
 nav li a {
     display: block;
-    color: 34282C;
+    color: #34282C;
     text-align: center;
     padding: 0.5em 1em;
     text-decoration: none;
@@ -41,27 +41,30 @@ nav li a {
 
 main {
     clear: left;
-    background-color: #d6c9f2;
+    /*background-color: #d6c9f2;*/
+    background-color: #fff;
     padding: 2%;
     font-size: 1.25em;
     color: #34282C;
 }
 
+
 #about, #goals, #education {
-    width: 32%;
+    width: 29%;
     float: left;
-    margin: 0 2;
+    margin: 0 2%;
 }
 
 
-footer p, a {
+footer p {
+    clear: left;
     text-align: center;
     font-size: 1em;
     color:#34282C;
     padding: 0 1em;
 }
 
-footer a {
+footer p a {
     color:#34282C;
     text-decoration: none;
 }
