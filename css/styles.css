@@ -1,10 +1,17 @@
 body {
-    background-color: #d6c9f2 ;
+    /*background-color: #d6c9f2;*/
+    background-color: #b99ad9;
+}
+
+img {
+    max-width: 100%;
+    display: block;
 }
 
 header {
     width: 25%;
     float: left;
+    color: #34282C;
 }
 
 nav {
@@ -13,6 +20,48 @@ nav {
     margin: 5em 3em 0 0;
 }
 
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    text-align: right;
+}
+
+nav li {
+    display:inline-block;
+    font-size: 2em;
+}
+
+nav li a {
+    display: block;
+    color: 34282C;
+    text-align: center;
+    padding: 0.5em 1em;
+    text-decoration: none;
+}
+
 main {
     clear: left;
+    background-color: #d6c9f2;
+    padding: 2%;
+    font-size: 1.25em;
+    color: #34282C;
+}
+
+#about, #goals, #education {
+    width: 32%;
+    float: left;
+    margin: 0 2;
+}
+
+
+footer p, a {
+    text-align: center;
+    font-size: 1em;
+    color:#34282C;
+    padding: 0 1em;
+}
+
+footer a {
+    color:#34282C;
+    text-decoration: none;
 }
