@@ -6,7 +6,7 @@ Date: 4/25/2024
 
 
 /* CSS Reset */
-body, header, nav, main, footer, h1, div, img {
+body, header, nav, main, footer, h1, div, img, ul {
     margin: 0;
     padding: 0;
     border: 0;
@@ -34,8 +34,8 @@ header {
     /*position: -webkit-sticky;
     position: sticky;
     top: 0;
-    background-color: #b99ad9;
     height: 190px;*/
+    background-color: #b99ad9;
     width: 25%;
     float: left;
     /*color: #34282C;*/
@@ -48,43 +48,70 @@ header img {
 
 /* Style rules for navigation area */
 nav {
-    width: 70%;
-    float: right;
-    margin: 5em 3em 0 0;
+    padding: 1%;
+    margin-bottom: 1%;
 }
 
 nav ul {
     list-style-type: none;      /*removes bullet*/
-    margin: 0;
-    text-align: right;
+    text-align: center;
 }
 
 nav li {
-    display: inline-block;      /*removes underline from link*/
     font-size: 2em;
-    font-family: lato, verdana, Ariel;
-    font-weight: bold;
+    font-family: "Lato", sans-serif;
+    border-top: 1px solid #fff;
+}
+
+nav li:first-child {
+    border-top: none;
 }
 
 nav li a {
     display: block;
     color: #34282C;
-    text-align: center;
     padding: 0.5em 1em;
     text-decoration: none;
 }
 
 
+/* Show mobile class, hide tablet-desktop class */
+.mobile {
+    display: block;
+}
+
+.tablet-desktop {
+    display: none;
+}
+
+
 /* Style rules for main content */
 main {
-    clear: left;
     /*background-color: #d6c9f2;*/
     background-color: #fff;
     padding: 2%;
-    font-size: 1.25em;
+    font-size: 1.15em;
+    font-family: "Merriweather", serif;
     color: #34282C;
     overflow: auto;
 }
+
+.tel-link {
+    background-color: #b99ad9;
+    padding: 2%;
+    margin: 0 auto;
+    width: 80%;
+    text-align: center;
+    border-radius: 5px;
+}
+
+.tel-link a {
+    color: #34282C;
+    text-decoration: none;
+    font-size: 1.5em;
+    display: block;
+}
+
 
 .action {
     font-size: 1.35em;
@@ -93,22 +120,26 @@ main {
 }
 
 #about, #goals, #education {
-    width: 29%;
-    float: left;
     margin: 0 2%;
+}
+
+.round {
+    border-radius: 8px;
 }
 
 #contact {
     text-align: center;
 }
 
-#contact a {
+#contact .contact-email-link {
     color: #8a2be2;
     text-decoration: none;
 }
 
 .map {
-    border: 8px solid #b99ad9;
+    border: 2px solid #b99ad9;
+    width: 95%;
+    height: 50%;
 }
 
 
@@ -119,9 +150,55 @@ footer p {
     font-size: 1em;
     color:#34282C;
     padding: 0 1em;
+    font-family: "Lato", sans-serif;
 }
 
 footer p a {
     color:#34282C;
     text-decoration: none;
+}
+
+/* Media Query for Tablet Viewport */
+@media screen and (min-width: 630px) {
+ 
+    /* Tablet Viewport: Show tablet-desktop class, hide mobile class */
+    .tablet-desktop {
+        display: block;
+    }
+
+    .mobile {
+        display: none;
+    }
+
+    /* Tablet Viewport: Style rule for header */
+    header {
+        position: static;
+        padding-bottom: 2%;
+    }
+
+    /* Tablet Viewport: Style rules for nav area */
+    nav li {
+        border-top: none;
+        display: inline-block;
+        border-right: 1px solid #b99ad9;
+    }
+
+    nav li:last-child {
+        border-right: none;
+    }
+
+    nav li a {
+        padding: 0.1em 0.75em;
+    }
+
+    /* Tablet Viewport: Style rules for main content area */
+    main ul {
+        margin: 0 0 4% 10%;
+    }
+
+    /* Tablet Viewport: Style rules for phone */
+    .tel-num {
+        font-size: 1.25em;
+    }
+
 }
