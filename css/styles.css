@@ -6,7 +6,7 @@ Date: 4/25/2024
 
 
 /* CSS Reset */
-body, header, nav, main, footer, h1, div, img, ul {
+body, header, nav, main, footer, h1, div, img, ul, section, article, aside {
     margin: 0;
     padding: 0;
     border: 0;
@@ -23,16 +23,19 @@ img {
     display: block;
 }
 
+/* Style rule for the box sizing applies to all elements */
+* {
+    box-sizing: border-box;
+}
+
 
 /* Style rules for mobile viewport */
 
 
 /* Style rules for header */
 header {
-    position: -webkit-sticky;
-    position: sticky;
     top: 0;
-    height: 190px;
+    height: 200px;
     background-color: #b99ad9;
 }
 
@@ -90,6 +93,29 @@ main {
     overflow: auto;
 }
 
+.mobile h3 {
+    text-shadow: 5px 5px 8px #d6c9f2;
+}
+
+article {
+    padding: 2%;
+}
+
+article h3 {
+    text-align: center;
+}
+
+article img {
+    margin: 0 auto;
+}
+
+article:nth-of-type(2) {
+    background-color: rgba(250, 249, 246, 0.3);
+    box-shadow: 5px 5px 8px #b99ad9;
+    text-shadow: #d6c9f2;
+    border-radius: 0 15px;
+}
+
 .tel-link {
     background-color: #d6c9f2;
     padding: 2%;
@@ -111,6 +137,7 @@ main {
     font-size: 1.35em;
     color:#8a2be2;
     font-weight: bold;
+    text-shadow: 5px 5px 8px #d6c9f2;
 }
 
 #about, #goals, #education {
@@ -119,6 +146,7 @@ main {
 
 .round {
     border-radius: 8px;
+    border: 2px solid #b99ad9;
 }
 
 #contact {
@@ -190,6 +218,32 @@ footer p a {
         margin: 0 0 4% 10%;
     }
 
+    .grid {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-gap: 20px;
+    }
+
+    #gradient {
+        background: linear-gradient(to left, #d6c9f2, #fff);
+    }
+
+    aside {
+        text-align: center;
+        font-size: 1.25em;
+        font-style: italic;
+        font-weight: bold;
+        padding: 2%;
+        background-color: rgba(250, 249, 246, 0.5);
+        box-shadow: 5px 5px 8px #b99ad9;
+        text-shadow: #d6c9f2;
+        border-radius: 0 15px;
+    }
+
+    .grid-item {
+        grid-column: 1 / span 3;
+    }
+
     /* Tablet Viewport: Style rules for phone */
     .tel-num {
         font-size: 1.25em;
@@ -209,7 +263,7 @@ footer p a {
     header {
         width: 25%;
         float: left;
-        padding-bottom: .70%;
+        padding-bottom: 0%;         
     }
 
     /* Desktop Viewport: Style rules for nav area */
@@ -245,6 +299,10 @@ footer p a {
         font-size: 1.8em;
     }
 
+    article h3 {
+        font-size: 1.75em;
+    }
+
     #about, #goals, #education {
         width: 29%;
         float: left;
@@ -265,7 +323,7 @@ footer p a {
 
         body {
             background-color: #fff;
-            color: 000;
+            color: black;
         }
     }
 }
