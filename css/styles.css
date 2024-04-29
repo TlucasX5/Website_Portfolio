@@ -148,8 +148,9 @@ article:nth-of-type(2) {
 }
 
 #contact .contact-email-link {
-    color: #8a2be2;
+    color: #34282C;;
     text-decoration: none;
+    font-size: 1.5em;
 }
 
 .map {
@@ -166,6 +167,17 @@ article:nth-of-type(2) {
 
 #form h2 {
     text-align: center;
+}
+
+.btn { 
+    background-color: #d6c9f2;
+    color:#34282C;
+    font-family: "Lato", sans-serif;
+    padding: 2%;
+    cursor: pointer;
+    font-size: 1.5em;
+    border-radius: 5px;
+    border-color: #d6c9f2;
 }
 
 
@@ -196,14 +208,15 @@ label {
 
 
 /* Style rules for footer content */
-footer .email {
+footer p {
     float: left;
     text-align: center;
     font-size: 0.75em;
     color:#34282C;
     padding: 2% 4%;
     font-family: "Lato", sans-serif;
-    width: 75%
+    width: 75%;
+    overflow: auto;
 }
 
 footer p a {
@@ -301,6 +314,19 @@ footer p a {
         grid-column: 1 / span 3;
     }
 
+    .btn {
+        grid-column: 1 / span 3;
+        background-color: #b99ad9;
+        color:#34282C;
+        font-family: "Lato", sans-serif;
+        border: none;
+        padding: 12px 30px;
+        cursor: pointer;
+        font-size: 20px;
+        border-radius: 5px;
+        border: 2px solid #b99ad9;
+    }
+
     /* Tablet Viewport: Style rule for  form element */
     form {
         width: 70%;
@@ -309,6 +335,10 @@ footer p a {
 
     /* Tablet Viewport: Style rules for phone */
     .tel-num {
+        font-size: 1.25em;
+    }
+
+    #contact .contact-email-link {
         font-size: 1.25em;
     }
 
@@ -384,9 +414,23 @@ footer p a {
         grid-gap: 20px
     }
 
-    .btn {
+    /*.btn {
         grid-column: 1 / span 3;
-    }
+        background-color: #b99ad9;
+        color:#34282C;
+        font-family: "Lato", sans-serif;
+        border: none;
+        padding: 12px 30px;
+        cursor: pointer;
+        font-size: 20px;
+        border-radius: 5px;
+        border: 2px solid #b99ad9;
+    }*/
+
+    /* Darker background on mouse-over */
+    .btn:hover {
+        background-color: #fff;
+  }
 
 }
 
