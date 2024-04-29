@@ -92,7 +92,7 @@ main {
 }
 
 article {
-    padding: 2%;
+    padding: 3%;
 }
 
 article h3, h4 {
@@ -180,6 +180,25 @@ article:nth-of-type(2) {
     border-color: #d6c9f2;
 }
 
+#skills, #experience {
+    background-color: #d6c9f2;
+    border-radius: 5px;
+    border-color: #b99ad9;
+    margin: 1% 20%;
+    color: #34282C;
+    box-shadow: 5px 5px 8px #b99ad9;
+    padding: 3% 10%;
+}
+
+#skills dt {
+    font-weight: bold;
+    font-style: italic;
+    text-decoration: underline;
+}
+
+#experience {
+    margin: 3% 20%;
+}
 
 /* Style rules for form elements */
 fieldset, input, select, textarea {
@@ -208,26 +227,12 @@ label {
 
 
 /* Style rules for footer content */
-footer p {
-    float: left;
-    text-align: center;
-    font-size: 0.75em;
-    color:#34282C;
-    padding: 2% 4%;
-    font-family: "Lato", sans-serif;
-    width: 75%;
-    overflow: auto;
-}
 
-footer p a {
-    color:#34282C;
-    text-decoration: none;
-}
 
 .social {
     float: right;
     width: 20%;
-    padding: 2%;
+    padding: 1%;
 }
 
 .social img {
@@ -413,19 +418,6 @@ footer p a {
         grid-template-columns: auto auto auto;
         grid-gap: 20px
     }
-
-    /*.btn {
-        grid-column: 1 / span 3;
-        background-color: #b99ad9;
-        color:#34282C;
-        font-family: "Lato", sans-serif;
-        border: none;
-        padding: 12px 30px;
-        cursor: pointer;
-        font-size: 20px;
-        border-radius: 5px;
-        border: 2px solid #b99ad9;
-    }*/
 
     /* Darker background on mouse-over */
     .btn:hover {
