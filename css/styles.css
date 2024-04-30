@@ -147,6 +147,10 @@ article:nth-of-type(2) {
     text-align: center;
 }
 
+#location {
+    text-align: center;
+}
+
 #contact .contact-email-link {
     color: #34282C;;
     text-decoration: none;
