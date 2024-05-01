@@ -138,6 +138,7 @@ article:nth-of-type(2) {
     margin: 0 2%;
 }
 
+
 .round {
     border-radius: 8px;
     border: 2px solid #b99ad9;
@@ -184,24 +185,19 @@ article:nth-of-type(2) {
     border-color: #d6c9f2;
 }
 
-#skills, #experience {
-    background-color: #d6c9f2;
-    border-radius: 5px;
-    border-color: #b99ad9;
-    margin: 1% 20%;
+#skills, #work, #degree {
     color: #34282C;
+    padding: 3%;
     box-shadow: 5px 5px 8px #b99ad9;
-    padding: 3% 10%;
+    text-shadow: #d6c9f2;
+    border-radius: 0 15px;
+    margin: 0 auto;
 }
 
-#skills dt {
+.grid #skills dt, .grid #work dt, .grid #degree dt {
     font-weight: bold;
     font-style: italic;
     text-decoration: underline;
-}
-
-#experience {
-    margin: 3% 20%;
 }
 
 /* Style rules for form elements */
